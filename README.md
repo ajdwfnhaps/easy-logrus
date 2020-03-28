@@ -91,6 +91,7 @@ func TestLogConfigFile(t *testing.T) {
 
 
 ```
+! [text ] (/pic/log.png)
 
 ### 配置文件详解
 
