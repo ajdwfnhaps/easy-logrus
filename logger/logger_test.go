@@ -40,7 +40,7 @@ func TestLogConfigFile(t *testing.T) {
 		t.Error(err)
 	}
 
-	DeviceInit("9100156", "134", "7")
+	//DeviceInit("9100156", "134", "7")
 
 	//可去掉追踪tid
 	GlobalLogOption.TIDFunc = nil
