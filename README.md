@@ -91,7 +91,9 @@ func TestLogConfigFile(t *testing.T) {
 
 
 ```
-! [text ] (/pic/log.png)
+
+**运行效果如下图：**
+![text](https://github.com/ajdwfnhaps/easy-logrus/blob/master/pic/log.png)
 
 ### 配置文件详解
 
