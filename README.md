@@ -1,5 +1,8 @@
 # easy-logrus
 封装logrus组件,简单易用,方便在项目中集成应用
+1. 可使用配置文件
+2. 支持日志分割（file-rotatelogs）
+3. 集成LineHook
 
 ### 使用easy-logrus
 
@@ -88,3 +91,36 @@ func TestLogConfigFile(t *testing.T) {
 
 
 ```
+
+### 配置文件详解
+
+```
+
+# 日志配置
+[log]
+# 应用编号，例如：100001 物联网关，100002 minik终端
+app_no = 100001
+# 应用名称
+app_name = "Go应用003"
+# 日志级别(1:fatal 2:error,3:warn,4:info,5:debug)
+log_level = 5
+# 日志格式（支持输出格式：text/json）
+format = "json"
+# 日志输出(支持：stdout/stderr/file/multi)
+# output = "multi"
+# 指定日志输出的文件路径
+output_file = "logs/app"
+# 是否禁用自定义时间戳显示
+disable_custom_timestamp = false
+# 是否禁用行号信息显示(WarnLevel以上才会显示)
+disable_line_hook = false
+# 设置保留天数
+log_file_max_age = 7
+# 设置每天分割日志文件
+log_file_rotation_time = 86400
+# 设置日志文件名规则
+log_file_path_format = ".%Y-%m-%d.log"
+
+```
+
+详细可参考[测试用例](logger/logger_test.go)
