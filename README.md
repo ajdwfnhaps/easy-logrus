@@ -98,8 +98,8 @@ func TestLogConfigFile(t *testing.T) {
 
 # 日志配置
 [log]
-# 应用编号，例如：100001 物联网关，100002 minik终端
-app_no = 100001
+# 应用编号，例如：10001
+app_no = 10001
 # 应用名称
 app_name = "Go应用003"
 # 日志级别(1:fatal 2:error,3:warn,4:info,5:debug)
